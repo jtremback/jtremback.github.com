@@ -1,0 +1,121 @@
+body {
+  font-family: sans-serif;
+  font-size: 1em; }
+
+.basic, .annotation, .bucket .card, .detail, .uparrow, .downarrow, .heatmap, .heatmap .pointer, .notifier .icon, .original {
+  border: 1px solid black;
+  border-radius: 2px;
+  background: white; }
+
+.fixframe {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%; }
+
+.spacer {
+  width: 250px;
+  height: 100%;
+  display: inline-block;
+  background: blue; }
+
+.scrolling {
+  height: 100%;
+  position: relative;
+  clear: none; }
+
+.annotation, .bucket .card, .detail {
+  padding: 0.5em;
+  margin: 0.25em;
+  margin-bottom: 0.5em; }
+  .annotation .topbar, .bucket .card .topbar, .detail .topbar {
+    height: 3em; }
+  .annotation .arrows, .bucket .card .arrows, .detail .arrows {
+    display: inline-block;
+    margin-right: 0.25em; }
+  .annotation .innerbar, .bucket .card .innerbar, .detail .innerbar {
+    display: inline-block;
+    vertical-align: top; }
+    .annotation .innerbar .user, .bucket .card .innerbar .user, .detail .innerbar .user {
+      font-weight: bold; }
+  .annotation .content, .bucket .card .content, .detail .content {
+    font-size: 1em;
+    margin-top: -1em;
+    line-height: 1em;
+    overflow: hidden; }
+
+.uparrow {
+  width: 1em;
+  height: 0.9em;
+  border-top-right-radius: 100%;
+  border-top-left-radius: 100%;
+  margin-bottom: 0.25em; }
+
+.downarrow {
+  width: 1em;
+  height: 0.9em;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%; }
+
+.dylan {
+  text-align: center;
+  font-size: 1em;
+  line-height: 1em; }
+
+.heatmap {
+  position: absolute;
+  right: 0;
+  top: 7px;
+  bottom: 0;
+  width: 20px; }
+  .heatmap .pointer {
+    position: absolute;
+    left: -10px;
+    height: 20px;
+    width: 25px;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    background: white; }
+
+.notifier {
+  position: absolute;
+  top: 0;
+  left: -76px; }
+  .notifier .icon {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-right: 1px; }
+
+.bucket {
+  width: 15em;
+  overflow: auto;
+  height: 100%; }
+  .bucket .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+  .bucket .card .content {
+    max-height: 10em; }
+
+.detail {
+  position: absolute;
+  width: 25em;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto; }
+
+.original {
+  margin-bottom: 0.5em;
+  padding: 0 0.5em; }
+
+.reply {
+  float: right;
+  margin-left: 1em; }
+
+#icon1, #pointer1, #card1 {
+  cursor: pointer;
+  box-shadow: 0px 0px 5px #b4cdcd inset; }
