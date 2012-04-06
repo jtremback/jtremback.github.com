@@ -1,61 +1,61 @@
-body {
-  font-family: sans-serif;
-  font-size: 1em; }
-
-.basic, .annotation, .bucket .card, .detail, .uparrow, .downarrow, .heatmap, .heatmap .pointer, .notifier .icon, .original {
+.basic, .heatmap, .heatmap .pointer, .notifier .icon, .input-menu .annotate, .input-menu .favorite, .input-menu .flag {
   border: 1px solid black;
   border-radius: 2px;
   background: white; }
+
+.item, .annotate-input, .content, .incoming, .user {
+  border-top: 1px solid white;
+  border-bottom: 1px solid #aaaaaa;
+  border-left: 2px solid #aaaaaa;
+  padding: 0.5em; }
+
+.stance {
+  font-size: 1.1em;
+  border-radius: 2px;
+  padding-bottom: -0.3em;
+  padding-top: 0.2em;
+  padding-left: 0.3em;
+  padding-right: 0.3em; }
+
+.fyi {
+  background: yellow;
+  border-bottom: 1px solid black;
+  border-top: 1px solid white; }
+
+.disagree {
+  background: #ffdddd;
+  color: red;
+  border: 1px solid red; }
+
+.agree {
+  background: #ddffdd;
+  color: green;
+  border: 1px solid green; }
+
+.colonialism {
+  background: white;
+  color: brown;
+  border: 1px solid brown; }
+
+.multiplier {
+  font-size: 0.9em;
+  margin-left: -1px;
+  vertical-align: bottom; }
 
 .fixframe {
   position: fixed;
   right: 0;
   top: 0;
-  height: 100%; }
-
-.spacer {
-  width: 250px;
   height: 100%;
-  display: inline-block;
-  background: blue; }
+  font-family: sans-serif;
+  font-size: 0.9em; }
+  .fixframe p {
+    margin-top: 0; }
 
 .scrolling {
   height: 100%;
   position: relative;
   clear: none; }
-
-.annotation, .bucket .card, .detail {
-  padding: 0.5em;
-  margin: 0.25em;
-  margin-bottom: 0.5em; }
-  .annotation .topbar, .bucket .card .topbar, .detail .topbar {
-    height: 3em; }
-  .annotation .arrows, .bucket .card .arrows, .detail .arrows {
-    display: inline-block;
-    margin-right: 0.25em; }
-  .annotation .innerbar, .bucket .card .innerbar, .detail .innerbar {
-    display: inline-block;
-    vertical-align: top; }
-    .annotation .innerbar .user, .bucket .card .innerbar .user, .detail .innerbar .user {
-      font-weight: bold; }
-  .annotation .content, .bucket .card .content, .detail .content {
-    font-size: 1em;
-    margin-top: -1em;
-    line-height: 1em;
-    overflow: hidden; }
-
-.uparrow {
-  width: 1em;
-  height: 0.9em;
-  border-top-right-radius: 100%;
-  border-top-left-radius: 100%;
-  margin-bottom: 0.25em; }
-
-.downarrow {
-  width: 1em;
-  height: 0.9em;
-  border-bottom-right-radius: 100%;
-  border-bottom-left-radius: 100%; }
 
 .dylan {
   text-align: center;
@@ -87,8 +87,61 @@ body {
     float: left;
     margin-right: 1px; }
 
+.input-menu .annotate {
+  height: 1.5em;
+  width: 1.5em;
+  display: inline-block; }
+.input-menu .favorite {
+  height: 1.5em;
+  width: 1.5em;
+  display: inline-block; }
+.input-menu .flag {
+  height: 1.5em;
+  width: 1.5em;
+  display: inline-block; }
+
+.detail {
+  background: #fdf8f8;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  overflow: auto; }
+
+.time {
+  font-size: 0.9em;
+  margin-bottom: 1em; }
+
+.utility {
+  font-size: 1.1em;
+  text-align: right;
+  text-decoration: underline; }
+
+.annotation {
+  background: #fdf8f8; }
+  .annotation .user {
+    background: #faeded; }
+
+.reply {
+  background: #faeded;
+  margin-left: 1em; }
+  .reply .user {
+    background: #efdcdc; }
+
+.content {
+  overflow: hidden;
+  border-bottom: 1px solid #aaaaaa; }
+
+.incoming {
+  font-size: 0.9em;
+  text-align: right; }
+
+.user {
+  font-weight: bold; }
+
 .bucket {
-  width: 15em;
+  width: 300px;
   overflow: auto;
   height: 100%; }
   .bucket .overlay {
@@ -96,25 +149,11 @@ body {
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0; }
-  .bucket .card .content {
+    right: 0;
+    background: black;
+    opacity: 0.3; }
+  .bucket .annotation .content {
     max-height: 10em; }
-
-.detail {
-  position: absolute;
-  width: 25em;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  overflow: auto; }
-
-.original {
-  margin-bottom: 0.5em;
-  padding: 0 0.5em; }
-
-.reply {
-  float: right;
-  margin-left: 1em; }
 
 #icon1, #pointer1, #card1 {
   cursor: pointer;
