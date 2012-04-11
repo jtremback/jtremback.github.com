@@ -407,8 +407,8 @@ ul#menu li, ul#menu a {
 
 .annotator-notice, .annotator-filter *, .annotator-widget * {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 1;
+  font-size: 13px;
+  line-height: 1.2em;
   font-weight: normal;
   text-align: left;
   margin: 0;
@@ -422,24 +422,79 @@ ul#menu li, ul#menu a {
   -webkit-box-shadow: none;
   -o-box-shadow: none;
   box-shadow: none;
-  color: #909090; }
+  color: #666666; }
   .annotator-notice p, .annotator-filter * p, .annotator-widget * p {
     margin-bottom: 0.5em; }
 
+.annotator-whitebox, .annotator-widget input, .annotator-widget textarea, .annotator-excerpt {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #fcfcfc));
+  background-image: -webkit-linear-gradient(#ffffff, #fcfcfc);
+  background-image: -moz-linear-gradient(#ffffff, #fcfcfc);
+  background-image: -o-linear-gradient(#ffffff, #fcfcfc);
+  background-image: -ms-linear-gradient(#ffffff, #fcfcfc);
+  background-image: linear-gradient(#ffffff, #fcfcfc);
+  border: 1px solid rgba(31, 31, 31, 0.31);
+  border-radius: 3px; }
+
+.annotator-up {
+  background-image: url("/images/iconset_wireframe/up_4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  opacity: 0.8; }
+
+.annotator-down {
+  background-image: url("/images/iconset_wireframe/down_4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  opacity: 0.8; }
+
+.annotator-writebutton {
+  background-image: url("/images/iconset_wireframe/edit_1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90% 90%;
+  opacity: 0.6; }
+
+.annotator-flagbutton {
+  background-image: url("/images/iconset_wireframe/flag_1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90% 90%;
+  opacity: 0.6; }
+
+.annotator-favebutton {
+  background-image: url("/images/iconset_wireframe/fave_1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90% 90%;
+  opacity: 0.6; }
+
+.annotator-savebutton {
+  background-image: url("/images/iconset_wireframe/submit_1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90% 90%;
+  opacity: 0.6; }
+
+.annotator-deletebutton {
+  background-image: url("/images/iconset_wireframe/delete_1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90% 90%;
+  opacity: 0.6; }
+
 .annotator-hl {
   background: rgba(255, 255, 10, 0.3); }
-
-.annotator-group:after {
-  visibility: hidden;
-  display: block;
-  content: "";
-  clear: both;
-  height: 0; }
 
 .annotator-listing {
   list-style-type: none;
   padding: 0;
   margin: 0; }
+
+.annotator-replies {
+  padding-left: 1em; }
 
 .annotator-detail {
   position: fixed;
@@ -448,102 +503,120 @@ ul#menu li, ul#menu a {
   bottom: 0;
   overflow: auto;
   width: 500px;
-  background: #fbfbfb;
+  background: #fffdeb;
   border-left: 2px solid rgba(209, 209, 209, 0.31); }
 
-.annotator-widget {
-  padding: 0.5em;
-  padding-bottom: 0;
-  margin-top: 1em;
-  border-top: 1px solid rgba(133, 133, 133, 0.31); }
-  .annotator-widget button {
-    border: 1px solid rgba(133, 133, 133, 0.31);
-    border-radius: 3px;
-    padding: 0.5em;
-    background: #f8f8f8; }
-    .annotator-widget button:hover {
-      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fbfbfb), color-stop(100%, #f3f3f3));
-      background-image: -webkit-linear-gradient(#fbfbfb, #f3f3f3);
-      background-image: -moz-linear-gradient(#fbfbfb, #f3f3f3);
-      background-image: -o-linear-gradient(#fbfbfb, #f3f3f3);
-      background-image: -ms-linear-gradient(#fbfbfb, #f3f3f3);
-      background-image: linear-gradient(#fbfbfb, #f3f3f3); }
-    .annotator-widget button:active {
-      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f8f8f8), color-stop(100%, #ededed));
-      background-image: -webkit-linear-gradient(#f8f8f8, #ededed);
-      background-image: -moz-linear-gradient(#f8f8f8, #ededed);
-      background-image: -o-linear-gradient(#f8f8f8, #ededed);
-      background-image: -ms-linear-gradient(#f8f8f8, #ededed);
-      background-image: linear-gradient(#f8f8f8, #ededed);
-      border: 1px solid rgba(0, 0, 0, 0.31); }
-  .annotator-widget input, .annotator-widget textarea {
-    border: 1px solid rgba(133, 133, 133, 0.31);
-    background: #f8f8f8;
-    border-radius: 3px;
-    padding: 0.5em;
-    width: 97%; }
-    .annotator-widget input:focus, .annotator-widget textarea:focus {
-      outline: none;
-      background: #f8f8f8;
-      border: 1px solid rgba(0, 0, 0, 0.31); }
-
-.annotator-item {
-  padding-top: 0.8em; }
-
-.annotator-excerpt {
-  border: 1px solid rgba(133, 133, 133, 0.31);
+.annotator-widget button {
+  border: 1px solid rgba(0, 0, 0, 0.31);
   border-radius: 3px;
   padding: 0.5em;
-  background: #f8f8f8; }
+  box-shadow: 1px 1px 4px rgba(209, 209, 209, 0.31); }
+  .annotator-widget button:hover {
+    opacity: 1; }
+.annotator-widget input, .annotator-widget textarea {
+  padding: 0.5em;
+  width: 97%;
+  box-shadow: 1px 1px 4px rgba(209, 209, 209, 0.31); }
+  .annotator-widget input:focus, .annotator-widget textarea:focus {
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.31); }
+
+.annotator-writebutton {
+  width: 2.5em;
+  height: 2.5em;
+  float: right; }
+
+.annotator-flagbutton {
+  width: 2.5em;
+  height: 2.5em;
+  float: right; }
+
+.annotator-favebutton {
+  width: 2.5em;
+  height: 2.5em;
+  float: right;
+  margin-right: 0.25em; }
+
+.annotator-savebutton {
+  width: 2.5em;
+  height: 2.5em;
+  float: right;
+  margin-right: 0.25em; }
+
+.annotator-deletebutton {
+  width: 2.5em;
+  height: 2.5em;
+  float: right; }
+
+.annotator-reply {
+  margin-top: 1em;
+  border-top: 1px solid rgba(133, 133, 133, 0.31);
+  border-left: 1px solid rgba(230, 230, 230, 0.5);
+  background: rgba(247, 245, 255, 0.08); }
+
+.annotator-item {
+  padding-left: 1em;
+  padding-right: 0.5em;
+  padding-top: 1em; }
+
+.annotator-excerpt {
+  padding: 0.5em;
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 0.5em;
+  box-shadow: 1px 1px 4px rgba(209, 209, 209, 0.31); }
   .annotator-excerpt .annotator-big {
     font-size: 16px;
     color: #c12c3b;
     margin-bottom: 0.25em; }
 
-.annotator-content p {
-  line-height: 1.2em; }
 .annotator-content p:last-child {
   margin-bottom: 0; }
 
-.annotator-listing.annotator-replies {
-  padding-left: 1em; }
+.annotator-meta {
+  color: #c12c3b;
+  font-size: 16px; }
 
 .annotator-controls {
-  height: 2em; }
+  height: 2.5em; }
+  .annotator-controls input {
+    width: 80%; }
 
-.annotator-reply {
+.annotator-writebutton {
   float: right; }
 
-.annotator-flag {
+.annotator-flagbutton {
   float: right;
   margin-right: 0.25em; }
 
 .annotator-score {
-  border: 1px solid rgba(133, 133, 133, 0.31);
-  border-radius: 3px;
-  padding: 0.5em;
-  float: left; }
-  .annotator-score span {
-    display: inline-block;
-    border-right: 1px solid rgba(133, 133, 133, 0.31);
-    padding-right: 0.25em; }
-    .annotator-score span:last-child {
-      border-right: none;
-      padding-right: none; }
-  .annotator-score .annotator-big {
-    font-size: 16px;
-    color: #c12c3b;
-    display: inline; }
+  float: left;
+  display: inline-block;
+  text-align: center;
+  margin-right: 1em; }
+  .annotator-score .annotator-up {
+    padding: 0;
+    width: 2.5em;
+    height: 1.5em; }
+  .annotator-score .annotator-down {
+    padding: 0;
+    width: 2.5em;
+    height: 1.5em; }
   .annotator-score .annotator-small {
+    font-size: 14px;
+    color: black;
     display: inline; }
 
-.annotator-user {
+.annotator-info .annotator-user {
+  font-size: 16px;
   color: #c12c3b;
-  font-size: 16px; }
+  text-decoration: underline; }
+.annotator-info .annotator-time {
+  font-size: 14px; }
 
 .annotator-tag {
   vertical-align: super;
-  background: #f3f3f3;
+  background: #e2e0eb;
   border: 1px solid rgba(0, 0, 0, 0.31);
   border-radius: 3px;
   padding: 0 0.25em; }
