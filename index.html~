@@ -8,8 +8,4 @@
     <title>Hypothesis Annotator Integration</title>
   </head>
   <body class='index'>
-    <a href='build1/index.html'>Build 1</a>
-    <a href='build2/index.html'>Build 2</a>
-    <a href='build3/index.html'>Build 3</a>
-    <a href='build4/index.html'>Build 4</a>
-    <a href='build5/index.html'>Build 5</a>
+    <a href='build1/index.html'

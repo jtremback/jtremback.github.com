@@ -4,7 +4,7 @@
     <meta charset='utf-8' />
     <!-- Always force latest IE rendering engine (even in intranet) &amp; Chrome Frame -->
     <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
-    <link type="text/css" media="screen" href="stylesheets/site.css" rel="stylesheet" />
+    <link type="text/css" media="screen" href="/stylesheets/site.css" rel="stylesheet" />
     <title>Hypothesis Annotator Integration</title>
   </head>
   <body class='index'>
@@ -14,7 +14,7 @@
           <div id="source">
             <div id="content">
             <BGCOLOR="#FFFFFF"><H1 align="center">Bill Text<br />112th Congress (2011-2012)<br />H.R.3523.IH</H1><bgcolor="#ffffff"><hr/>
-
+          
             <p/>
             <table border="1" align="center" cellpadding="10"><td><a href="http://thomas.loc.gov/cgi-bin/t2GPO/http://www.gpo.gov/fdsys/pkg/BILLS-112hr3523ih/pdf/BILLS-112hr3523ih.pdf">Bill PDF</a></td><td><a href="/home/gpoxmlc112/h3523_ih.xml">XML</a><br/>
             <a href="/home/xml_help.html">[Help]</a><br/>
@@ -101,110 +101,111 @@
             <p><ul><ul>`Sec. 1104. Cyber threat intelligence and information sharing.'.</ul></ul>
           </div>
           <ul class='annotator-listing annotator-detail'>
-            <li class='annotator-annotation annotator-widget'>
+            <li class='annotator-widget annotator-annotation'>
               <div class='annotator-item annotator-excerpt'>
-                <div class='annotator-big'>
-                  Source Excerpt
+                <p>
+                  `(2) CYBER THREAT INTELLIGENCE- The term `cyber threat intelligence' means information in the possession of an element of the intelligence community directly pertaining to a vulnerability of, or threat to, a system or network of a government or private entity, including information pertaining to the protection of a system or network from--
+                </p>
+                <p>
+                  `(A) efforts to degrade, disrupt, or destroy such system or network; or
+                </p>
+                <p>
+                  `(B) theft or misappropriation of private or government information, intellectual property, or personally identifiable information.
+                </p>
+              </div>
+              <div class='annotator-item annotator-meta'>
+                <div class='annotator-score'>
+                  <div class='annotator-up'></div>
+                  <div class='annotator-small'>34.5</div>
                 </div>
-                <div class='annotator-small'>
-                  <p>
-                    `(2) CYBER THREAT INTELLIGENCE- The term `cyber threat intelligence' means information in the possession of an element of the intelligence community directly pertaining to a vulnerability of, or threat to, a system or network of a government or private entity, including information pertaining to the protection of a system or network from--
-                  </p>
-                  <p>
-                    `(A) efforts to degrade, disrupt, or destroy such system or network; or
-                  </p>
-                  <p>
-                    `(B) theft or misappropriation of private or government information, intellectual property, or personally identifiable information.
-                  </p>
+                <div class='annotator-info'>
+                  <div class='annotator-user'>bo1024</div>
+                  <div class='annotator-time'>posted 5 days ago</div>
                 </div>
               </div>
-              <div class='annotator-item annotator-user'>bo1024</div>
               <div class='annotator-item annotator-content'>
                 <p>
-                  <span class='annotator-tag'>I oppose this.</span>
                   From my reading, it explicitly includes intellectual property as a cybersecurity issue unto itself. (I have no idea why this would be justified.)
                 </p>
               </div>
-              <div class='annotator-item annotator-controls group'>
-                <button class='annotator-score'>
-                  <span>
-                    <div class='annotator-big'>3</div>
-                    <div class='annotator-small'>replies</div>
-                  </span>
-                  <span>
-                    <div class='annotator-big'>7.6</div>
-                    <div class='annotator-small'>score</div>
-                  </span>
-                </button>
-                <button class='annotator-reply'>Reply</button>
-                <button class='annotator-flag'>Flag</button>
+              <div class='annotator-item annotator-controls'>
+                <button class='annotator-writebutton'></button>
+                <button class='annotator-flagbutton'></button>
+                <button class='annotator-favebutton'></button>
+                <span class='annotator-tag'>I oppose this.</span>
               </div>
-              <ul class='annotator-listing annotator-replies'>
-                <li class='annotator-editor annotator-widget'>
-                  <form class='annotator-editor'>
-                    <div class='annotator-item'>
-                      <input id='annotator-field-3' placeholder='Add a stance.' />
-                    </div>
-                    <div class='annotator-item'>
-                      <textarea id='annotator-field-0' placeholder='Comments…'></textarea>
-                    </div>
-                  </form>
-                  <div class='annotator-item annotator-controls'>
-                    <button class='annotator-cancel'>Cancel</button>
-                    <button class='annotator-save'>Save</button>
+              <li class='annotator-editor annotator-widget'>
+                <form>
+                  <div class='annotator-item'>
+                    <textarea id='annotator-field-0' placeholder='Comments…'></textarea>
                   </div>
-                </li>
-                <li class='annotator-annotation annotator-widget'>
-                  <div class='annotator-item annotator-user'>IWantSpaceships</div>
+                </form>
+                <div class='annotator-item annotator-controls'>
+                  <input id='annotator-field-1' placeholder='Add a stance.' />
+                  <button class='annotator-deletebutton'></button>
+                  <button class='annotator-savebutton'></button>
+                </div>
+              </li>
+              <ul class='annotator-listing annotator-replies'>
+                <li class='annotator-widget annotator-reply'>
+                  <div class='annotator-item annotator-meta'>
+                    <div class='annotator-score'>
+                      <div class='annotator-small'>7.3</div>
+                      <div class='annotator-down'></div>
+                    </div>
+                    <div class='annotator-info'>
+                      <div class='annotator-user'>IWantSpaceships</div>
+                      <div class='annotator-time'>posted 5 days ago</div>
+                    </div>
+                  </div>
                   <div class='annotator-item annotator-content'>
                     <p>
-                      <span class='annotator-tag'>Downvote</span>
                       That's not what I see when I read it. It doesn't state that intellectual property as a cybersecurity issue unto itself, only "protection of a system or network" from theft or misappropriation of that property. The bill does not expand an entity's power to control the distribution of that property after its theft/misappropriation from its network.
                     </p>
                   </div>
-                  <div class='annotator-item annotator-controls group'>
-                    <button class='annotator-score'>
-                      <span>
-                        <div class='annotator-big'>2</div>
-                        <div class='annotator-small'>replies</div>
-                      </span>
-                      <span>
-                        <div class='annotator-big'>10.9</div>
-                        <div class='annotator-small'>score</div>
-                      </span>
-                    </button>
-                    <button class='annotator-reply'>Reply</button>
-                    <button class='annotator-flag'>Flag</button>
+                  <div class='annotator-item annotator-controls'>
+                    <button class='annotator-writebutton'></button>
+                    <button class='annotator-flagbutton'></button>
+                    <button class='annotator-favebutton'></button>
+                    <span class='annotator-tag'>Downvote</span>
                   </div>
                   <ul class='annotator-listing annotator-replies'>
-                    <li class='annotator-annotation annotator-widget'>
-                      <div class='annotator-item annotator-user'>malogos</div>
+                    <li class='annotator-widget annotator-reply'>
+                      <div class='annotator-item annotator-meta'>
+                        <div class='annotator-score'>
+                          <div class='annotator-up'></div>
+                          <div class='annotator-small'>11.2</div>
+                        </div>
+                        <div class='annotator-info'>
+                          <div class='annotator-user'>malogos</div>
+                          <div class='annotator-time'>posted 4 days ago</div>
+                        </div>
+                      </div>
                       <div class='annotator-item annotator-content'>
                         <p>
-                          <span class='annotator-tag'>Upvote</span>
                           Your reading is correct. This bill is about cyber security and not copyright protection. ISPs are actually a minor part of this bill it's aimed to protect critical infrastructure. ISPs would only be sharing data that involves there role as critical US infrastructure, and so monitoring individual users isn't the point at all. If the wording needs cleaned up, that's one thing, but the intent is clearly not to spy on citizens.
                         </p>
                       </div>
-                      <div class='annotator-item annotator-controls group'>
-                        <button class='annotator-score'>
-                          <span>
-                            <div class='annotator-big'>1</div>
-                            <div class='annotator-small'>reply</div>
-                          </span>
-                          <span>
-                            <div class='annotator-big'>5.2</div>
-                            <div class='annotator-small'>score</div>
-                          </span>
-                        </button>
-                        <button class='annotator-reply'>Reply</button>
-                        <button class='annotator-flag'>Flag</button>
+                      <div class='annotator-item annotator-controls'>
+                        <button class='annotator-writebutton'></button>
+                        <button class='annotator-flagbutton'></button>
+                        <button class='annotator-favebutton'></button>
+                        <span class='annotator-tag'>Upvote</span>
                       </div>
                       <ul class='annotator-listing annotator-replies'>
-                        <li class='annotator-annotation annotator-widget'>
-                          <div class='annotator-item annotator-user'>Thethoughtful1</div>
+                        <li class='annotator-widget annotator-reply'>
+                          <div class='annotator-item annotator-meta'>
+                            <div class='annotator-score'>
+                              <div class='annotator-up'></div>
+                              <div class='annotator-small'>34.5</div>
+                            </div>
+                            <div class='annotator-info'>
+                              <div class='annotator-user'>bo1024</div>
+                              <div class='annotator-time'>posted 5 days ago</div>
+                            </div>
+                          </div>
                           <div class='annotator-item annotator-content'>
                             <p>
-                              <span class='annotator-tag'>Think about it.</span>
                               I would not argue against your guys' reading. In fact, although I personally read it differently, I would rather go with your reading. However, the very fact that it can be read the way the OP and I read it means that it is too ambiguous.
                             </p>
                             <p>
@@ -223,19 +224,11 @@
                               Nor is any law that attempts to protect IP. IP should be protected in its own laws, using its own rules. Preferably several laws dealing with different forms of IP.
                             </p>
                           </div>
-                          <div class='annotator-item annotator-controls group'>
-                            <button class='annotator-score'>
-                              <span>
-                                <div class='annotator-big'>0</div>
-                                <div class='annotator-small'>replies</div>
-                              </span>
-                              <span>
-                                <div class='annotator-big'>23.5</div>
-                                <div class='annotator-small'>score</div>
-                              </span>
-                            </button>
-                            <button class='annotator-reply'>Reply</button>
-                            <button class='annotator-flag'>Flag</button>
+                          <div class='annotator-item annotator-controls'>
+                            <button class='annotator-writebutton'></button>
+                            <button class='annotator-flagbutton'></button>
+                            <button class='annotator-favebutton'></button>
+                            <span class='annotator-tag'>Think about it.</span>
                           </div>
                         </li>
                       </ul>
