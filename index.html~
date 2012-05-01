@@ -30,5 +30,5 @@
 <a href="build-2c2922a/index.html" class="temporal">04/21/2012, 07:03:51 PM</a><span class="commit-m"> -  master...origin/master [ahead 1]@2c2922a new layout with vertical score indicators floated left with text wrapping around them and usernames plus tags in bottom bar. Bucket view in no way complete</span><br>
 <a href="build-8213ac9/index.html" class="temporal">04/22/2012, 12:38:06 AM</a><span class="commit-m"> -  master...origin/master [ahead 1]@8213ac9 New version without boxes around score indicators. Added color arrows and dots to images foler, have not implemented.</span><br>
 <a href="build-d185ecf/index.html" class="temporal">04/23/2012, 09:31:04 AM</a><span class="commit-m"> -  master...origin/master [ahead 1]@d185ecf Added new bucket view, controls, some js for slidedown. Writer controls got messed up.</span><br>
+
 <a href="build_def/index.html" class="temporal">04/29/2012, 12:301:04 PM</a><span class="commit-m"> -  Partial new look</span><br>
-<a href="build-8bc9399/index.html" class="temporal">05/01/2012, 03:03:26 PM</a><span class="commit-m"> -  fix@8bc9399 New layout, needs more polishing but getting there. Need to write JS.</span><br>
